@@ -1,10 +1,11 @@
 /*
- * Hello. 2 points.
+ * Hello. 2 points. DONE.
  */
 
 function hello() {
 
-  // WRITE YOUR EXERCISE 1 CODE HERE
+  var helloText = document.getElementById("output1");
+  helloText.innerHTML = ("Hello, AP Computer Science Principles!");
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -12,7 +13,7 @@ function hello() {
 }
 
 /*
- * Hello, Again. 3 points.
+ * Hello, Again. 3 points. DONE.
  */
 
 function helloAgain() {
@@ -21,7 +22,9 @@ function helloAgain() {
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
+  name = prompt("Please enter your name.");
+  var helloAgainText = document.getElementById("output2");
+  helloAgainText.innerHTML=("Hello, " + name + "!");
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -29,7 +32,7 @@ function helloAgain() {
 }
 
 /*
- * Celsius. 5 points.
+ * Celsius. 5 points. IN PROGRESS.
  */
 
 function celsius() {
@@ -41,7 +44,9 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+  var celsiusText = document.getElementById("output3");
+  farenheit = ((1.8 * cels) + 32).toFixed(2);
+  celsiusText.innerHTML=(farenheit + " Farenheit");
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
