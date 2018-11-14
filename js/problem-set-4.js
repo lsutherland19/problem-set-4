@@ -4,7 +4,7 @@
 
 function hello() {
 
-  var helloText = document.getElementById("output1");
+  let helloText = document.getElementById("output1");
   helloText.innerHTML = ("Hello, AP Computer Science Principles!");
 
   ////////////////// DO NOT MODIFY
@@ -23,8 +23,8 @@ function helloAgain() {
   //////////// DO NOT MODIFY      in response to your prompt.
 
   name = prompt("Please enter your name.");
-  var helloAgainText = document.getElementById("output2");
-  helloAgainText.innerHTML=("Hello, " + name + "!");
+  let helloAgainText = document.getElementById("output2");
+  helloAgainText.innerHTML = ("Hello, " + name + "!");
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -32,7 +32,7 @@ function helloAgain() {
 }
 
 /*
- * Celsius. 5 points. IN PROGRESS.
+ * Celsius. 5 points. DONE.
  */
 
 function celsius() {
@@ -44,9 +44,9 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  var celsiusText = document.getElementById("output3");
+  let celsiusText = document.getElementById("output3");
   farenheit = ((1.8 * cels) + 32).toFixed(2);
-  celsiusText.innerHTML=(farenheit + " Farenheit");
+  celsiusText.innerHTML = (cels + " degrees Celsius equals " + farenheit + " degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -54,7 +54,7 @@ function celsius() {
 }
 
 /*
- * Fahrenheit. 5 points.
+ * Fahrenheit. 5 points. DONE.
  */
 
 function fahrenheit() {
@@ -66,7 +66,9 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+  let fahrenheitText = document.getElementById("output4");
+  celsius = ((fahr - 32) * (5/9)).toFixed(2);
+  fahrenheitText.innerHTML = (fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius.")
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -74,7 +76,7 @@ function fahrenheit() {
 }
 
 /*
- * Inches. 5 points.
+ * Inches. 5 points. IN PROGRESS.
  */
 
 function inches() {
@@ -89,8 +91,11 @@ function inches() {
   ////////////////////// DO NOT MODIFY
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
+  input = prompt("Enter a non-negative integer.");
+  let inchesText = document.getElementById("output5");
+  if (inches >= 63360) {
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  }
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
