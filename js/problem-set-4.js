@@ -93,8 +93,10 @@ function inches() {
   ////////////////////// DO NOT MODIFY
   input = prompt("Enter a non-negative integer.");
   let inchesText = document.getElementById("output5");
-  if (inches >= 63360) {
-
+  let miles = Math.floor(inches/63360);
+  let yards = Math.floor((inches - (miles * 63360)/36);
+  let feet = Math.floor((inches - (miles * 63360)/36) - (yards * 63360)/36);
+  inches = Math.floor((inches - (miles * 63360) - (yards * 36) - (feet * 12))/1);
   }
 
   ////////////////////////// DO NOT MODIFY
